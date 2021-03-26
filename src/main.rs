@@ -32,7 +32,7 @@ fn main() {
         ));
         let mut pb = PathBuilder::new();
         if let Some(pos) = window.get_mouse_pos(MouseMode::Clamp) {
-            pb.rect(pos.0, pos.1, 100., 130.);
+            pb.rect(pos.0 - 50., pos.1 - 65., 100., 130.);
             let path = pb.finish();
             dt.fill(
                 &path,
